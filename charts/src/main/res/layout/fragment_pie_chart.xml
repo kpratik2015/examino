@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/transparent">
+    <FrameLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <com.androidplot.pie.PieChart
+            android:id="@+id/PieChart"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            androidPlot.renderMode="use_background_thread"
+            androidPlot.title="A Simple Pie Chart"
+            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+            androidPlot.titleWidget.labelPaint.color="@color/textColor"
+            androidPlot.pieWidget.marginTop="16dp"
+            androidPlot.pieWidget.marginLeft="8dp"
+            androidPlot.pieWidget.marginBottom="8dp"
+            androidPlot.pieWidget.marginRight="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

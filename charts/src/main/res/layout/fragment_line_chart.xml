@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/transparent">
+    <FrameLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/chart_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" >
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/xy_plot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            androidPlot.renderMode="use_background_thread"
+            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size"
+            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+            androidPlot.domainLabelWidget.labelPaint.color="@color/textColor"
+            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+            androidPlot.rangeLabelWidget.labelPaint.color="@color/textColor"
+            androidPlot.titleWidget.labelPaint.color="@color/textColor"
+            androidPlot.graphWidget.marginTop="16dp"
+            androidPlot.graphWidget.marginLeft="8dp"
+            androidPlot.graphWidget.marginBottom="48dp"
+            androidPlot.graphWidget.marginRight="16dp"
+            androidPlot.graphWidget.backgroundPaint.color="@color/transparent"
+            androidPlot.graphWidget.gridBackgroundPaint.color="@color/transparent"
+            androidPlot.graphWidget.domainGridLinePaint.color="@color/transparent"
+            androidPlot.graphWidget.domainOriginLinePaint.color="@color/textColor"
+            androidPlot.graphWidget.rangeOriginLinePaint.color="@color/textColor"
+            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+            androidPlot.graphWidget.rangeLabelPaint.color="@color/textColor"
+            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+            androidPlot.graphWidget.rangeOriginLabelPaint.color="@color/textColor"
+            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+            androidPlot.graphWidget.domainLabelPaint.color="@color/textColor"
+            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+            androidPlot.graphWidget.domainOriginLabelPaint.color="@color/textColor"
+            androidPlot.legendWidget.textPaint.textSize="@dimen/legend_text_font_size"
+            androidPlot.legendWidget.textPaint.color="@color/textColor"
+            androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+            androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+            androidPlot.legendWidget.heightMetric.value="25dp"
+            androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+            />
+    </LinearLayout>
+
+</LinearLayout>

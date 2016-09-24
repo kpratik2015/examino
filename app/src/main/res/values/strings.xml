@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string name="app_name">examino</string>
+
+    <!-- Activity Titles -->
+    <string formatted="false" name="allQuestionsFilterActivity">All Questions</string>
+    <string formatted="false" name="questionsDSItemFormActivity"></string>
+    <string formatted="false" name="examinoMain">examino</string>
+    <string formatted="false" name="menuActivity">Menu</string>
+    <string formatted="false" name="allQuestionsActivity">All Questions</string>
+    <string formatted="false" name="cfcaqMenuItem1Activity">CFCA Q.</string>
+    <string formatted="false" name="dmsaqActivity">DMSA Q.</string>
+    <string formatted="false" name="dcwsnqActivity">DCWSN Q.</string>
+    <string formatted="false" name="questionsCountActivity">Questions Count</string>
+</resources>
+
+

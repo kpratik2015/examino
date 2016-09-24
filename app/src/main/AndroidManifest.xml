@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibm.mobileappbuilder.examino20160923051552" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.AllQuestionsFilterActivity"
+            android:label="@string/allQuestionsFilterActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.QuestionsDSItemFormActivity"
+            android:label="@string/questionsDSItemFormActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.ExaminoMain"
+            android:label="@string/examinoMain"
+            android:theme="@style/AppTheme.Drawer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+      </activity>
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.MenuActivity"
+            android:label="@string/menuActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.AllQuestionsActivity"
+            android:label="@string/allQuestionsActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.AllQuestionsDetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.CFCAQMenuItem1Activity"
+            android:label="@string/cfcaqMenuItem1Activity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.CFCAQMenuItem1DetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.DMSAQActivity"
+            android:label="@string/dmsaqActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.DMSAQDetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.DCWSNQActivity"
+            android:label="@string/dcwsnqActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.DCWSNQDetailActivity"
+        />
+        <activity android:name="com.ibm.mobileappbuilder.examino20160923051552.ui.QuestionsCountActivity"
+            android:label="@string/questionsCountActivity"
+        />
+        <activity android:name="com.worklight.wlclient.ui.UIActivity"/>
+    </application>
+
+</manifest>
